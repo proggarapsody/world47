@@ -45,6 +45,7 @@ const Loading: React.FC = () => {
             </div>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ x: 400 }}
           animate={{ x: 0 }}

@@ -1,11 +1,11 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import logo from "../../images/logo/logo.png";
-import { Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./navbar.css";
+import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import logo from '../../images/logo/logo.png'
+import WalletButton from '../WalletButton'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './navbar.css'
 
 const NavBar: React.FC = () => {
   return (
@@ -27,16 +27,13 @@ const NavBar: React.FC = () => {
         <div className="d-flex align-items-center order">
           <span className="line d-lg-inline-block d-none"></span>
           <i className="fa-regular fa-heart"></i>
-          <Button
-            variant="primary"
-            className="btn-primary d-none d-lg-inline-block"
-          >
-            Connect Wallet
-          </Button>
+          <div className="ms-3">
+            <WalletButton />
+          </div>
         </div>
       </Container>
     </Navbar>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
